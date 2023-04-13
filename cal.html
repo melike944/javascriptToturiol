@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    calculate
+</head>
+<br>
+<body>
+    <input id="val1" />
+    <input id="val2" />
+    <br>
+    <button id="addbtn">add </button>
+    
+    <button id="subbtn">sub </button>
+    
+    <button id="mulbtn">mul </button>
+
+    <p id="result"></p>
+</body>
+<script>
+    document.getElementById("addbtn").onclick = add2number;
+    document.getElementById("subbtn").onclick = sub2number;
+    document.getElementById("mulbtn").onclick = mul2number;
+
+    function add2number() {
+        let a = document.getElementById("val1").value;
+        let b = document.getElementById("val1").value;
+        let rs = parseInt(a) + parseInt(b);
+        document.getElementById("result").innerHTML = rs;
+    }
+
+   
+
+    function sub2number() {
+        let a = document.getElementById("val1").value;
+        let b = document.getElementById("val1").value;
+        let rs = parseInt(a) - parseInt(b);
+        document.getElementById("result").innerHTML = rs;
+    }
+
+    
+    function mul2number() {
+        let a = document.getElementById("val1").value;
+        let b = document.getElementById("val1").value;
+        let rs = parseInt(a) * parseInt(b);
+        document.getElementById("result").innerHTML = rs;
+    }
+
+
+
+
+
+
+
+</script>
+
+</html>
